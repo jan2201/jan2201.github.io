@@ -1,0 +1,142 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+    line-height: 1.50;
+    padding-bottom: 500px;
+}
+
+/* latihan1 */
+.container1 {
+    width: 800px;
+    margin: 50px auto;
+    background-color: azure;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kotak-utama {
+    flex: 3;
+    order: 2;
+}
+
+.slide-1 {
+    flex: 1;
+    order: 1;
+}
+.slide-2 {
+    flex: 1;
+    order: 3;
+}
+
+
+/*latihan 2*/
+.container2 {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu {
+    background-color: rgb(208, 170, 241);
+}
+.layanan.dua {
+    background-color: rgb(216, 122, 122);
+}
+.layanan.tiga {
+    background-color: rgb(178, 222, 134);
+}
+
+/*latihan 3*/
+.container3 {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/*latihan 4*/
+.container4 {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+    height: 150px;
+    background-color: lightslategrey;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    transform: scale(1.10);
+}
+
+/*latihan 5*/
+.container5 {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 3px solid rgb(172, 220, 172);
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: slategrey;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+/*responsive*/
+@media (min-width: 500px) {
+    .container2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .layanan {
+        width: 30%;
+    }
+    .thumbnail {
+        width: 25%;
+    }
+}
